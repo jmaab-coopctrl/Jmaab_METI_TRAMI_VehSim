@@ -31,4 +31,4 @@ TRAMI_Standare_AT_StrategyData_v182_9AT_d06;
 %%ƒ‚ƒfƒ‹‚ðŠJ‚­
 open_system('TRAMI_STEP_AT_vehicle_ver01_R2018b');
 
-cd Working
+%cd Working
