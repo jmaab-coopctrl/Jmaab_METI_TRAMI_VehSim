@@ -1,3 +1,5 @@
+% METI_TRAMI_Thermal_ver01_Jmaab_2018b_Intg.slxのPreLoadスクリプト
+
 % Model Variant Object
 
 VarObj_METI_Subsys =Simulink.Variant('TM_ModelType==1');
