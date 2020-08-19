@@ -13,22 +13,22 @@
 % addpath(genpath('mex'));     % mexフォルダ以下をパスに追加
 % addpath(genpath('FMU'));     % FMUフォルダ以下をパスに追加
 
-%%パラメータ読込み
-ALT_CNT_set_params;
-ALT_PNT_set_params;
-BK_PNT_set_params;
-BT_PNT_Lo_set_params;
-COMMON_set_params;
-Driver_set_params;
-EL_PNT_set_params;
-ENG_CNT_set_params;
-ENG_PNT_set_params;
-ST_PNT_set_params;
-VL_PNT_set_params;
-TRAMI_Standare_AT_Strategy_v183_define;
-TRAMI_Standare_AT_StrategyData_v182_9AT_d06;
+%%パラメータ読込み　モデルのPreLoad関数でロード
+% ALT_CNT_set_params;
+% ALT_PNT_set_params;
+% BK_PNT_set_params;
+% BT_PNT_Lo_set_params;
+% COMMON_set_params;
+% Driver_set_params;
+% EL_PNT_set_params;
+% ENG_CNT_set_params;
+% ENG_PNT_set_params;
+% ST_PNT_set_params;
+% VL_PNT_set_params;
+% TRAMI_Standare_AT_Strategy_v183_define;
+% TRAMI_Standare_AT_StrategyData_v182_9AT_d06;
 
 %%モデルを開く
-open_system('TRAMI_STEP_AT_vehicle_ver01_R2018b');
+open_system('METI_TRAMI_Thermal_ver01_Jmaab_2018b_Intg');
 
-%cd Working
+%cd Working　FMUの動作エラー回避のためコメント化
