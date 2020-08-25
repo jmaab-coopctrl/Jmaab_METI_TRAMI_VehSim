@@ -27,7 +27,7 @@ clear elems;
 assignin('base', 'PHI_TM_RD',PHI_TM_RD);
 %---------------------%
 
-% T_TMTH_PNT 要素の定義
+% T_TMTH_PNT_TRAMI 要素の定義
 clear elems;
 elems(1) = Simulink.BusElement;
 elems(1).Name = 'T_oil_K';
@@ -55,15 +55,15 @@ elems(2).Max = [];
 elems(2).DocUnits = '';
 elems(2).Description = sprintf (''); 
 
-% T_TMTH_PNT バスの定義
-T_TMTH_PNT = Simulink.Bus;
-T_TMTH_PNT.HeaderFile = '';
-T_TMTH_PNT.Description = sprintf ('');
-T_TMTH_PNT.DataScope = 'Auto';
-T_TMTH_PNT.Alignment = -1;
-T_TMTH_PNT.Elements = elems;
+% T_TMTH_PNT_TRAMI バスの定義
+T_TMTH_PNT_TRAMI = Simulink.Bus;
+T_TMTH_PNT_TRAMI.HeaderFile = '';
+T_TMTH_PNT_TRAMI.Description = sprintf ('');
+T_TMTH_PNT_TRAMI.DataScope = 'Auto';
+T_TMTH_PNT_TRAMI.Alignment = -1;
+T_TMTH_PNT_TRAMI.Elements = elems;
 clear elems;
-assignin('base', 'T_TMTH_PNT',T_TMTH_PNT);
+assignin('base', 'T_TMTH_PNT_TRAMI',T_TMTH_PNT_TRAMI);
 %---------------------%
 
 % PHI_TM_ATM 要素の定義
@@ -144,7 +144,7 @@ clear elems;
 assignin('base', 'PHI_TM_ENG',PHI_TM_ENG);
 %---------------------%
 
-% TMTH_Info 要素の定義
+% TMTH_TRAMI_Info 要素の定義
 clear elems;
 elems(1) = Simulink.BusElement;
 elems(1).Name = 'tScope_ATF_Temp_C';
@@ -198,15 +198,15 @@ elems(4).Max = [];
 elems(4).DocUnits = '';
 elems(4).Description = sprintf (''); 
 
-% TMTH_Info バスの定義
-TMTH_Info = Simulink.Bus;
-TMTH_Info.HeaderFile = '';
-TMTH_Info.Description = sprintf ('');
-TMTH_Info.DataScope = 'Auto';
-TMTH_Info.Alignment = -1;
-TMTH_Info.Elements = elems;
+% TMTH_TRAMI_Info バスの定義
+TMTH_TRAMI_Info = Simulink.Bus;
+TMTH_TRAMI_Info.HeaderFile = '';
+TMTH_TRAMI_Info.Description = sprintf ('');
+TMTH_TRAMI_Info.DataScope = 'Auto';
+TMTH_TRAMI_Info.Alignment = -1;
+TMTH_TRAMI_Info.Elements = elems;
 clear elems;
-assignin('base', 'TMTH_Info',TMTH_Info);
+assignin('base', 'TMTH_TRAMI_Info',TMTH_TRAMI_Info);
 %---------------------%
 
 % T_ENG_TM 要素の定義
