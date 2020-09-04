@@ -1,4 +1,5 @@
-TM_ModelType = 3;
+TM_ModelType = 'TRAMI_AT';
+TM_ModelSlct = 2;
 
 % TRAMI_TM_PNT_BusInfo;
 % TRAMI_DTTH_PNT_BusInfo;

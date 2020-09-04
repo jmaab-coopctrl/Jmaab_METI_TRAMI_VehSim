@@ -1,4 +1,5 @@
-TM_ModelType = 2;
+TM_ModelType = 'METI_CVT';
+TM_ModelSlct = 1;
 
 % METI_TM_PNT_BusInfo;
 % METI_DTTH_PNT_BusInfo;
